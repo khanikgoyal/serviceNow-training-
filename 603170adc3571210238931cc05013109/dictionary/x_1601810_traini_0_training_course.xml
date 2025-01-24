@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d6b37061c3971210238931cc05013172" label="Training Course" max_length="40" name="x_1601810_traini_0_training_course" type="collection">
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Prerequisites" max_length="4000" name="prerequisites" type="glide_list"/>
+        <element label="Duration" max_length="40" name="duration" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Max Capacity" max_length="40" name="max_capacity" type="integer"/>
+        <element label="Fees" max_length="40" name="fees" type="integer"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Training ID" max_length="100" name="training_id" type="string"/>
+        <element choice="1" label="Training Type" max_length="40" name="training_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Classroom" value="Classroom"/>
+                <element inactive_on_update="false" label="Webinar" value="Webinar"/>
+                <element inactive_on_update="false" label="Online" value="Online"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ServiceNow"/>
+                <element inactive_on_update="false" label="Salesforce"/>
+                <element inactive_on_update="false" label="Dot Net"/>
+                <element inactive_on_update="false" label="Java"/>
+            </choice>
+        </element>
+    </element>
+</database>
